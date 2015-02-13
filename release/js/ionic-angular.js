@@ -1465,7 +1465,7 @@ function($rootScope, $state, $location, $window, $timeout, $ionicViewSwitcher, $
         // create an element from the viewLocals template
         ele = $ionicViewSwitcher.createViewEle(viewLocals);
         if (this.isAbstractEle(ele, viewLocals)) {
-          console.log('VIEW', 'abstractView', DIRECTION_NONE, viewHistory.currentView);
+          void 0;
           return {
             action: 'abstractView',
             direction: DIRECTION_NONE,
@@ -1580,7 +1580,7 @@ function($rootScope, $state, $location, $window, $timeout, $ionicViewSwitcher, $
         }
       }
 
-      console.log('VIEW', action, direction, viewHistory.currentView);
+      void 0;
 
       hist.cursor = viewHistory.currentView.index;
 
@@ -11941,7 +11941,7 @@ function($timeout, $compile, $ionicSlideBoxDelegate, $ionicHistory) {
       };
 
       this.onPagerClick = function(index) {
-        console.log('pagerClick', index);
+        void 0;
         $scope.pagerClick({index: index});
       };
 
